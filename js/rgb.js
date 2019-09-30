@@ -1,15 +1,13 @@
-'use strict';
+document.getElementById("enviar").addEventListener("click",function(e){
+   var r = document.getElementById("r").value;
+   var g = document.getElementById("g").value;    
+   var b = document.getElementById("b").value;    
+   
+   var valorHex = RGBtoHex(r,g,b);
+    
+   document.getElementById("hex").value = "#" + valorHex;
+    var RGB = HexToRGB(valorHex);
+    document.getElementById("RGB").value = RGB;
 
-/* Función que al pasar un valor RGB devuelva el resultado en representación hexadecimal
-*/
-function rgb(r,g,b) { 
-  return "#000000";
-}
-
-/* Función que al pasar un valor RGB en representación hexadecimal
-   devuelve la representación en formato decimal con el formato RRRGGGBB
-*/
-function hex(h) {
-   return "000000000";
-}
+});
 
