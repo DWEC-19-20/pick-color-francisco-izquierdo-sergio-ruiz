@@ -65,6 +65,6 @@ function cambio(valorHex){
     r.value=parseInt(valorHex.substr(1,2),16);
     g.value=parseInt(valorHex.substr(3,2),16);
     b.value=parseInt(valorHex.substr(5,2),16);
-    document.getElementById("hex").value = valorHex;
+    document.getElementById("hex").value = valorHex.toUpperCase();
     document.getElementById("RGB").value = RGB;
 }
