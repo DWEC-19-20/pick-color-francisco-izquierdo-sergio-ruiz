@@ -1,0 +1,36 @@
+table{
+    width: 50%;
+    text-align: center;
+}
+td.Color{
+    width: 30%;
+}
+td.color{
+    width: 30%;
+}
+td.input{
+    width: 35%;
+}
+label.negrita{
+    font-weight: bold;
+}
+td.enviar{
+    border: 0px;
+    width: 100%;
+}
+td.borrar{
+    border: 0px;
+    width: 100%;
+}
+button{
+    width: 100%;
+    height: 100%;
+}
+td.picker{
+    width: 100%;
+    height: 50px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 30px;
+    background: linear-gradient(110deg, #fdf44e 25%, rgba(0,0,0,0) 27%),linear-gradient(110deg, #93ff80 50%, rgba(0,0,0,0) 52%), linear-gradient(110deg, #aFFaeb 75%, rgba(0,0,0,0) 77%), linear-gradient(110deg, #ff6669 100%, rgba(0,0,0,0) 100%);
+}

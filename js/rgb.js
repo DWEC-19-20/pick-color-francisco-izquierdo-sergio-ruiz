@@ -1,13 +1,27 @@
-document.getElementById("enviar").addEventListener("click",function(e){
-   var r = document.getElementById("r").value;
-   var g = document.getElementById("g").value;    
-   var b = document.getElementById("b").value;    
-   
-   var valorHex = RGBtoHex(r,g,b);
-    
-   document.getElementById("hex").value = "#" + valorHex;
-    var RGB = HexToRGB(valorHex);
-    document.getElementById("RGB").value = RGB;
+const r = document.getElementById("r");
+const g = document.getElementById("g");
+const b = document.getElementById("b"); 
 
+// Mostrar conversión
+document.getElementById("enviar").addEventListener("click",function(e){
+   
+    var valorHex = rgb(r.value,g.value,b.value);
+    document.getElementById("hex").value = valorHex;
+  
+    var RGB = hex(valorHex);
+    document.getElementById("RGB").value = RGB;
+    
+    document.getElementById('color').style.background = valorHex;
+    
+});
+
+// Borrar datos
+document.getElementById("borrar").addEventListener("click",function(e){
+    r.value = "";
+    g.value = "";
+    b.value = "";
+    document.getElementById("hex").value = "";
+    document.getElementById("RGB").value = "";
+    document.getElementById("color").style.background='#FFFFFF';
 });
 

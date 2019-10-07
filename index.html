@@ -4,20 +4,72 @@
 </head>
 <html>
     <body>
-        <label for="r">r</label>
-        <input name="r" id="r"/>
-        <label for="g" >g</label>
-        <input name="g" id="g"/>
-        <label for="b" >b</label>
-        <input name ="b" id="b"/>
-        <button name="enviar" id="enviar">Enviar</button>
+      <center>
+       <table border="1">
+       <tr>
+           <td colspan="3"class="picker">COLOR PICKER</td>
+       </tr>
+        <tr>
+            <td class="Color" bgcolor="#ff8080">
+                <label class="negrita" for="r">Red</label>
+            </td>
+            <td class="input">
+                <input name="r" id="r"/>
+            </td>
+            <td class="input" rowspan="7" id="color">
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="Color" bgcolor="#00b300">
+                <label class="negrita" for="g" >Green</label>
+            </td>
+            <td class="input">
+                <input name="g" id="g"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="Color" bgcolor="#8080ff">
+                <label class="negrita" for="b" >Blue</label>
+            </td>
+            <td class="input">
+                <input name ="b" id="b"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="enviar" colspan="2">
+                <button  name="enviar" id="enviar">ENVIAR</button>
+            </td> 
+        </tr>
+        <tr>
+            <td class="borrar" colspan="2">
+                <button name="borrar" id="borrar">BORRAR</button>
+            </td> 
+        </tr>
+        
         <br><br>
-        <label for="hex">valor en hexadecimal</label>
-        <input name="hex" id="hex" readonly/>
-        <br><br>
-        <label for="RGB">valor RGB</label>
-        <input name="RGB" id="RGB" readonly/>
+        <tr>
+            <td class="color">
+                <label for="hex">HEXADECIMAL</label>    
+            </td>
+            <td >
+                <input name="hex" id="hex" readonly/>
+            </td>
+        </tr>
+        <tr>
+            <td class="color">
+                <label for="RGB">RGB</label>   
+            </td>
+            <td >
+                <input name="RGB" id="RGB" readonly/>
+            </td>
+        </tr>
+        
+        </table>
+
+        </center>
         <script src="js/rgb.js"></script>
         <script src="js/funciones.js"></script>
+ 
     </body>
 </html>
