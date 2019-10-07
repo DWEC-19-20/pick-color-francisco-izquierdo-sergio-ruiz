@@ -57,3 +57,14 @@ function formato(num){
     
 }
 
+// Cambiar valores al usar el Color input
+function cambio(valorHex){
+    valorHex = inColor.value;
+    var RGB = hex(valorHex);
+    
+    r.value=parseInt(valorHex.substr(1,2),16);
+    g.value=parseInt(valorHex.substr(3,2),16);
+    b.value=parseInt(valorHex.substr(5,2),16);
+    document.getElementById("hex").value = valorHex;
+    document.getElementById("RGB").value = RGB;
+}

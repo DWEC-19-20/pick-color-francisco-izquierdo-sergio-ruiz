@@ -34,3 +34,8 @@ td.picker{
     font-size: 30px;
     background: linear-gradient(110deg, #fdf44e 25%, rgba(0,0,0,0) 27%),linear-gradient(110deg, #93ff80 50%, rgba(0,0,0,0) 52%), linear-gradient(110deg, #aFFaeb 75%, rgba(0,0,0,0) 77%), linear-gradient(110deg, #ff6669 100%, rgba(0,0,0,0) 100%);
 }
+.inColor{
+    width: 98%;
+    height: 202px;
+    border: 0px;
+}
