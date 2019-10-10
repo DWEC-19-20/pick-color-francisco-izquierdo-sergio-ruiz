@@ -26,3 +26,17 @@ document.getElementById("borrar").addEventListener("click",function(e){
     inColor.value = '#FFFFFF';
 });
 
+document.getElementById("enviar2").addEventListener("click",function(e){
+    
+    var valorHex = document.getElementById("hex").value;
+  
+    var RGB = hex(valorHex);
+    document.getElementById("RGB").value = RGB;
+    
+    r.value = parseInt(RGB.substr(0,3));
+    g.value = parseInt(RGB.substr(3,3));
+    b.value = parseInt(RGB.substr(6));
+    
+    inColor.value = "#"+valorHex;
+    
+});
